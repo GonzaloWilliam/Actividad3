@@ -1,0 +1,62 @@
+/* Estilos para los renglones alternos de la tabla */
+.table-striped>tbody>tr:nth-child(odd)>td {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+.table-striped>tbody>tr:nth-child(even)>td {
+    background-color: rgba(255, 193, 7, 0.05);
+}
+
+/* Estilo para el sello "PAGADO" */
+.sello-pagado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 5rem;
+    color: rgba(40, 167, 69, 0.2);
+    font-weight: bold;
+    border: 0.5rem solid rgba(40, 167, 69, 0.2);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Estilos para diferentes secciones */
+.header-section {
+    background-color: #f8f9fa;
+}
+
+.customer-section {
+    background-color: #e9ecef;
+}
+
+.items-section {
+    background-color: #ffffff;
+}
+
+.totals-section {
+    background-color: #f1f3f5;
+}
+
+.notes-section {
+    background-color: #e2e3e5;
+}
+
+/* Z-index para elementos superpuestos */
+.logo-section {
+    position: relative;
+    z-index: 20;
+}
+
+/* Ajustes responsivos adicionales */
+@media (max-width: 768px) {
+    .sello-pagado {
+        font-size: 3rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .card-header h1 {
+        font-size: 1.5rem;
+    }
+}
